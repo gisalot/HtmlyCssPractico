@@ -1,0 +1,67 @@
+:root {
+    --blue-color: #36c;
+    --grey-border-color: #a2a9b1;
+    --grey-text-color: #54595d;
+    --grey-background-color: #f8f8fa;
+    --font-family-title: 'Linux Libertine', serif;
+    --font-family-content: -apple-system, sans-serif;
+}
+body {
+    color: var(--grey-text-color);
+    font-family: var(--font-family-content);
+    font-weight: 300px;
+    font-size: 13px;
+    margin: 0 1.3em;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+hr {
+    color: var(--grey-border-color);
+    border: 0.5px solid var(--grey-border-color);
+}
+.background-img {
+    background-image: url('../img/sprite-81a290a5.png');
+    background-repeat: no-repeat;
+    vertical-align: middle ;
+}
+
+.header {
+    color: black;
+    font-family: var(--font-family-title);
+    padding: 2.8em 0 1.5em 0;
+    text-align: center;
+}
+.header h1 {
+    font-size: 2.1em;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+.header h1 span {
+    font-size: 1.3em;
+}
+.header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+.navegation-container {
+    display: grid;
+    grid-template-columns: 10px repeat(7,70px) 10px;
+    grid-template-rows: repeat(5,65px);
+    justify-content: center;
+}
+.navegation-article {
+    text-align: center;
+}
+.navegation-article strong {
+    font-size: 1.23em;
+    color: var(--blue-color) ;
+}
